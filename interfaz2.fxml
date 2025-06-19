@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="500" prefWidth="800" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+   
+       <!-- Contenedor principal con encabezado y contenido centrado -->
+       <VBox alignment="TOP_CENTER" spacing="30">
+      <children>
+      
+              <!-- Encabezado azul oscuro -->
+              <Pane maxWidth="800" prefHeight="81.0" prefWidth="800.0" style="-fx-background-color: #1A1A65;">
+         <children>
+                     <Label layoutX="14.0" layoutY="28.0" style="-fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;" text="Registro de profesores" />
+         </children>
+              </Pane>
+      
+              <!-- Espaciador para separar el contenido del encabezado -->
+              <Region prefHeight="40" />
+      
+              <!-- Formulario centrado -->
+              <VBox alignment="CENTER" spacing="20">
+         <children>
+                     <GridPane hgap="20" vgap="15">
+                        <children>
+                            <!-- Fila 1 -->
+                            <TextField fx:id="emailField" prefWidth="250" promptText="Correo electrónico" GridPane.columnIndex="5" />
+                            <ComboBox fx:id="divisionCombo" prefWidth="250" promptText="División Académica" GridPane.columnIndex="8" />
+            
+                            <!-- Fila 2 -->
+                            <TextField fx:id="fullNameField" prefWidth="250" promptText="Nombre Completo" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                            <PasswordField fx:id="passwordField" prefWidth="250" promptText="Contraseña" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                        </children>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                     </GridPane>
+         
+                     <!-- Botón -->
+                     <Button fx:id="registerButton" style="-fx-background-color: #009879; -fx-text-fill: white; -fx-padding: 6 20 6 20; -fx-background-radius: 10;" text="Iniciar sesión" />
+         </children>
+              </VBox>
+      </children>
+   
+       </VBox>
+   </children>
+</StackPane>

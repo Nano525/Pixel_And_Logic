@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="577.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utez.edu.mx.prueba.HelloController">
+
+    <!-- Encabezado superior -->
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="10" style="-fx-background-color: #24276f; -fx-padding: 10;">
+            <MenuButton text="👤" style="-fx-font-size: 24px; -fx-text-fill: #747474; -fx-background-color: transparent;">
+                <items>
+                    <MenuItem text="Perfil" />
+                    <MenuItem text="Configuración" />
+                    <MenuItem text="Cerrar sesión" />
+                </items>
+            </MenuButton>
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="Archivos de estadías" />
+        </HBox>
+    </top>
+
+    <!-- Panel lateral izquierdo -->
+    <left>
+        <VBox prefWidth="240.0" spacing="10" style="-fx-background-color: #009688; -fx-padding: 10;">
+            <Label style="-fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 16px;" text="Filtros" />
+
+            <TitledPane text="Licenciatura">
+                <VBox spacing="5" style="-fx-padding: 5;">
+                    <CheckBox text="Administración" />
+                    <CheckBox text="Contaduría" />
+                    <CheckBox text="Diseño digital" />
+                    <CheckBox text="Gestión del bienestar" />
+                </VBox>
+            </TitledPane>
+
+            <TitledPane text="Ingeniería">
+                <VBox spacing="5" style="-fx-padding: 5;">
+                    <CheckBox text="Mantenimiento Industrial" />
+                    <CheckBox text="Mecatrónica" />
+                    <CheckBox text="Tecnologías de la Información" />
+                    <CheckBox text="Diseño textil y de moda" />
+                    <CheckBox text="Industrial" />
+                    <CheckBox text="Nanotecnología" />
+                </VBox>
+            </TitledPane>
+
+            <TitledPane text="TSU">
+                <VBox spacing="5" style="-fx-padding: 5;">
+                    <CheckBox text="Desarrollo de software" />
+                    <CheckBox text="Diseño Digital y Producción Audiovisual" />
+                    <CheckBox text="Diseño Textil y Moda" />
+                    <CheckBox text="Infraestructura de redes digitales" />
+                </VBox>
+            </TitledPane>
+
+            <TitledPane text="Año" />
+            <TitledPane text="Grupo" />
+            <TitledPane text="Periodo" />
+            <TitledPane text="Matrícula" />
+        </VBox>
+    </left>
+
+    <!-- Contenido central -->
+    <center>
+        <VBox prefHeight="698.0" prefWidth="871.0" spacing="10" style="-fx-padding: 20;">
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <TextField fx:id="matriculaField" prefHeight="30.0" prefWidth="535.0" promptText="Buscar Alumno" style="-fx-pref-height: 35; -fx-pref-width: 500; -fx-border-radius: 5; -fx-border-color: #00897b;" />
+                <Button onAction="#onRegistroAlumnos" style="-fx-background-color: #00897b; -fx-text-fill: white; -fx-pref-height: 35;" text="Registro de Alumnos" />
+            </HBox>
+
+            <TableView fx:id="tabla" prefHeight="759.0" prefWidth="695.0">
+                <columns>
+                    <TableColumn prefWidth="200" text="Nombre" />
+                    <TableColumn prefWidth="150" text="Fecha" />
+                    <TableColumn prefWidth="250" text="Página" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

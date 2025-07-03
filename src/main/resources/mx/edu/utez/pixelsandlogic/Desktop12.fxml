@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane style="-fx-background-color: #ECEFF1;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.pixelsandlogic.HelloApplication">
+
+    <VBox alignment="TOP_CENTER" prefWidth="600" spacing="0" style="-fx-padding: 0;">
+
+        <!-- Encabezado -->
+        <HBox alignment="CENTER_LEFT" prefHeight="60" style="-fx-background-color: #1A237E; -fx-padding: 0 0 0 20;">
+            <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="Extravío de contraseña docentes" />
+        </HBox>
+
+        <!-- Cuerpo -->
+        <StackPane alignment="TOP_CENTER" prefHeight="384.0" prefWidth="631.0" style="-fx-padding: 40;">
+            <VBox maxWidth="601.0" prefHeight="403.0" prefWidth="601.0" spacing="20" style="-fx-background-color: white; -fx-padding: 20; -fx-border-color: gray; -fx-border-radius: 5; -fx-background-radius: 5;">
+
+                <Label maxWidth="Infinity" style="-fx-background-color: #9E9E9E; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10;" text="Recupera contraseña" />
+
+                <VBox spacing="10">
+                    <Label text="Correo electrónico" />
+                    <TextField fx:id="emailField" promptText="Ingresa tu correo institucional" />
+                </VBox>
+
+                <VBox spacing="5">
+                    <Label style="-fx-font-weight: bold;" text="INSTRUCCIONES" />
+                    <Label text="• Ingresa tu correo institucional (se validará con los datos ya ingresados)" wrapText="true" />
+                    <Label text="• Ya validado llegará un correo con una nueva contraseña provisional" wrapText="true" />
+                </VBox>
+
+                <Button fx:id="enviarButton" prefHeight="26.0" prefWidth="124.0" style="-fx-background-color: #009688; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 20;" text="ENVIAR" />
+            </VBox>
+        </StackPane>
+
+    </VBox>
+</StackPane>

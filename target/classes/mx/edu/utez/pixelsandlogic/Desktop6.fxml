@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.resources.pixelsandlogic.RegistroProfesoresController" style="-fx-background-color: white;">
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.pixelsandlogic.HelloApplication"> style="-fx-background-color: white;">
     <top>
         <AnchorPane prefHeight="100.0" style="-fx-background-color: #23245C;">
             <children>

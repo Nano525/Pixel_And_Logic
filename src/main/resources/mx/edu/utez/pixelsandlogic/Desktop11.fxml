@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.pixelsandlogic.desktop11Controller">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1550.0" style="-fx-background-color: #1E2468;">
+         <children>
+            <Label text="                   Adminstrador de estadías-Administrador" textFill="#f8f6f6">
+               <font>
+                  <Font name="Inter Regular" size="14.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <HBox layoutX="-5.0" layoutY="-4.0" prefHeight="807.0" prefWidth="70.0" style="-fx-background-color: #747474;" />
+      <TableView layoutX="256.0" layoutY="112.0" prefHeight="670.0" prefWidth="1195.0">
+        <columns>
+          <TableColumn prefWidth="450.0" text="Nombre" />
+          <TableColumn prefWidth="414.0" text="Fecha" />
+            <TableColumn prefWidth="400.0" text="Página" />
+        </columns>
+      </TableView>
+      <Button layoutX="475.0" layoutY="81.0" mnemonicParsing="false" style="-fx-border-radius: 5; -fx-background-color: #029373;" text="Registro de Alumnos" textFill="#f5f4f4" />
+      <TextField layoutX="256.0" layoutY="81.0" prefHeight="25.0" prefWidth="211.0" promptText="Ingresa matrícula" />
+      <BorderPane layoutX="78.0" layoutY="80.0" prefHeight="703.0" prefWidth="172.0" style="-fx-background-color: #00AB84;">
+         <children>
+            <Label alignment="CENTER" text="   Filtros" textFill="#f8f7f7" />
+         </children>
+      </BorderPane>
+      <Accordion layoutX="86.0" layoutY="112.0" prefHeight="600.0" prefWidth="156.0" style="-fx-background-color: #00AB84;">
+          <panes>
+              <TitledPane prefHeight="360.0" prefWidth="156.0" text="Licenciatura">
+                  <content>
+                      <VBox spacing="2">
+                          <CheckBox text="TI" />
+                          <CheckBox text="Mecatrónica" />
+                          <CheckBox text="Procesos" />
+                      </VBox>
+                  </content>
+              </TitledPane>
+              <TitledPane text="Ingeniería">
+                  <content>
+                      <VBox spacing="2">
+                          <CheckBox text="Industrial" />
+                          <CheckBox text="Sistemas" />
+                          <CheckBox text="Mecánica" />
+                      </VBox>
+                  </content>
+              </TitledPane>
+              <TitledPane text="TSU">
+                  <content>
+                      <VBox spacing="2">
+                          <CheckBox text="TI" />
+                          <CheckBox text="Procesos" />
+                      </VBox>
+                  </content>
+              </TitledPane>
+              <TitledPane text="Año">
+                  <content>
+                      <VBox spacing="2">
+                          <CheckBox text="2022" />
+                          <CheckBox text="2023" />
+                          <CheckBox text="2024" />
+                      </VBox>
+                  </content>
+              </TitledPane>
+              <TitledPane text="Grupo">
+                  <content>
+                      <VBox spacing="2">
+                          <CheckBox text="A" />
+                          <CheckBox text="B" />
+                          <CheckBox text="C" />
+                      </VBox>
+                  </content>
+              </TitledPane>
+              <TitledPane text="Período">
+                  <content>
+                      <VBox spacing="2">
+                          <CheckBox text="Enero-Abril" />
+                          <CheckBox text="Mayo-Agosto" />
+                          <CheckBox text="Septiembre-Diciembre" />
+                      </VBox>
+                  </content>
+              </TitledPane>
+              <TitledPane text="Matrícula">
+                  <content>
+                      <VBox spacing="2">
+                          <CheckBox text="2022001" />
+                          <CheckBox text="2022002" />
+                          <CheckBox text="2022003" />
+                      </VBox>
+                  </content>
+              </TitledPane>
+              <TitledPane text="Actuales">
+                  <content>
+                      <VBox spacing="2">
+                          <CheckBox text="Sí" />
+                          <CheckBox text="No" />
+                      </VBox>
+                  </content>
+              </TitledPane>
+          </panes>
+      </Accordion>
+      <HBox alignment="CENTER" layoutX="-6.0" layoutY="10.0" prefHeight="80.0" prefWidth="70.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/Incono.png" />
+               </image></ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

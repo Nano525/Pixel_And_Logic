@@ -3,6 +3,6 @@ module main.resources.pixelsandlogic {
     requires javafx.fxml;
 
 
-    opens main.resources.pixelsandlogic to javafx.fxml;
-    exports main.resources.pixelsandlogic;
+    opens mx.edu.utez.pixelsandlogic to javafx.fxml;
+    exports mx.edu.utez.pixelsandlogic;
 }

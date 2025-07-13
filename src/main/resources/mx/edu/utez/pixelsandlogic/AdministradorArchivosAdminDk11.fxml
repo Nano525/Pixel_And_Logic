@@ -105,7 +105,7 @@
           </panes>
       </Accordion>
       <!-- Botón de menú con icono -->
-      <Button fx:id="menuButton" layoutX="10.0" layoutY="10.0" style="-fx-background-color: transparent;" prefWidth="50.0" prefHeight="50.0">
+      <Button fx:id="menuButton" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;">
          <graphic>
             <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -115,17 +115,17 @@
          </graphic>
       </Button>
       <!-- Menú lateral oculto -->
-      <VBox fx:id="sideMenu" layoutX="60.0" layoutY="0.0" prefWidth="220.0" prefHeight="350.0" visible="false" style="-fx-background-color: #888888; -fx-opacity: 0.95;">
+      <VBox fx:id="sideMenu" layoutX="60.0" layoutY="0.0" prefHeight="350.0" prefWidth="220.0" style="-fx-background-color: #888888; -fx-opacity: 0.95;" visible="false">
          <children>
-            <Label text="Menu de opciones   ▶" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-padding: 10 0 10 20;" />
+            <Label style="-fx-font-weight: bold; -fx-text-fill: white; -fx-padding: 10 0 10 20;" text="Menu de opciones   ▶" />
             <Separator />
-            <Button text="Registrarse" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
-            <Button text="Cambiar cuenta" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
-            <Button text="Administrador" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
-            <Button text="Registrar Alumnos" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
-            <Button text="Editar perfil" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
-            <Button text="Extravío de contraseñas" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
-            <Button text="Salir" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
+            <Button maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" text="Registrarse" />
+            <Button maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" text="Cambiar cuenta" />
+            <Button maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" text="Administrador" />
+            <Button fx:id="registroAlumnosButton" maxWidth="1.7976931348623157E308" onAction="#onRegistroAlumnosClicked" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" text="Registrar Alumnos" />
+            <Button maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" text="Editar perfil" />
+            <Button maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" text="Extravío de contraseñas" />
+            <Button fx:id="salirButton" maxWidth="1.7976931348623157E308" onAction="#onSalirClicked" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" text="Salir" />
          </children>
       </VBox>
       <HBox alignment="CENTER" layoutX="-6.0" layoutY="10.0" prefHeight="80.0" prefWidth="70.0" visible="false">

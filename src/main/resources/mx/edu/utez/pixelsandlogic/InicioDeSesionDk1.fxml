@@ -5,7 +5,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.pixelsandlogic.desktop1Controller">
+<StackPane style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.pixelsandlogic.InicioDeSesionDk1">
   <children>
     <VBox alignment="CENTER" maxWidth="450" spacing="15.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10;">
       <children>

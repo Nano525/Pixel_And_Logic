@@ -10,7 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class desktop1Controller {
+public class InicioDeSesionDk1 {
     @FXML
     private TextField email;
 
@@ -32,7 +32,7 @@ public class desktop1Controller {
             
             try {
                 // Cargar la nueva ventana
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Desktop11.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AdministradorArchivosAdminDk11.fxml"));
                 Scene scene = new Scene(fxmlLoader.load());
                 
                 // Crear nueva ventana

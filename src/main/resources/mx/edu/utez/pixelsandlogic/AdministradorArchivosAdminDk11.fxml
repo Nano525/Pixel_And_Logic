@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.pixelsandlogic.desktop11Controller">
+<AnchorPane prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.pixelsandlogic.AdministradorArchivosAdminDk11">
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1550.0" style="-fx-background-color: #1E2468;">
          <children>
@@ -23,7 +23,7 @@
             <TableColumn prefWidth="400.0" text="Página" />
         </columns>
       </TableView>
-      <Button layoutX="475.0" layoutY="81.0" mnemonicParsing="false" style="-fx-border-radius: 5; -fx-background-color: #029373;" text="Registro de Alumnos" textFill="#f5f4f4" />
+      <Button layoutX="475.0" layoutY="81.0" mnemonicParsing="false" style="-fx-border-radius: 5; -fx-background-color: #029373;" text="🔍" textFill="#f5f4f4" />
       <TextField layoutX="256.0" layoutY="81.0" prefHeight="25.0" prefWidth="211.0" promptText="Ingresa matrícula" />
       <BorderPane layoutX="78.0" layoutY="80.0" prefHeight="703.0" prefWidth="172.0" style="-fx-background-color: #00AB84;">
          <children>
@@ -32,7 +32,7 @@
       </BorderPane>
       <Accordion layoutX="86.0" layoutY="112.0" prefHeight="600.0" prefWidth="156.0" style="-fx-background-color: #00AB84;">
           <panes>
-              <TitledPane prefHeight="360.0" prefWidth="156.0" text="Licenciatura">
+              <TitledPane prefHeight="246.0" prefWidth="156.0" text="Licenciatura">
                   <content>
                       <VBox spacing="2">
                           <CheckBox text="TI" />
@@ -104,13 +104,32 @@
               </TitledPane>
           </panes>
       </Accordion>
-      <HBox alignment="CENTER" layoutX="-6.0" layoutY="10.0" prefHeight="80.0" prefWidth="70.0">
-         <children>
+      <!-- Botón de menú con icono -->
+      <Button fx:id="menuButton" layoutX="10.0" layoutY="10.0" style="-fx-background-color: transparent;" prefWidth="50.0" prefHeight="50.0">
+         <graphic>
             <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@assets/Incono.png" />
-               </image></ImageView>
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <!-- Menú lateral oculto -->
+      <VBox fx:id="sideMenu" layoutX="60.0" layoutY="0.0" prefWidth="220.0" prefHeight="350.0" visible="false" style="-fx-background-color: #888888; -fx-opacity: 0.95;">
+         <children>
+            <Label text="Menu de opciones   ▶" style="-fx-font-weight: bold; -fx-text-fill: white; -fx-padding: 10 0 10 20;" />
+            <Separator />
+            <Button text="Registrarse" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
+            <Button text="Cambiar cuenta" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
+            <Button text="Administrador" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
+            <Button text="Registrar Alumnos" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
+            <Button text="Editar perfil" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
+            <Button text="Extravío de contraseñas" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
+            <Button text="Salir" maxWidth="1.7976931348623157E308" style="-fx-background-color: #a0a0a0; -fx-text-fill: white; -fx-font-size: 14px;" />
          </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="-6.0" layoutY="10.0" prefHeight="80.0" prefWidth="70.0" visible="false">
+         <!-- Este HBox es el antiguo contenedor del icono, ahora oculto -->
       </HBox>
    </children>
 </AnchorPane>

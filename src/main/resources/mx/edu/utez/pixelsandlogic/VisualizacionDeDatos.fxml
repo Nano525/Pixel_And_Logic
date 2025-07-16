@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #f4f4f4;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <!-- Header -->
+        <Pane prefHeight="90.0" prefWidth="1080.0" style="-fx-background-color: #1E2468;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="40.0" layoutY="28.0" text="Visualización de Datos de Alumnos" textFill="white">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+
+        <!-- Panel principal -->
+        <AnchorPane layoutX="30.0" layoutY="120.0" prefHeight="570.0" prefWidth="1020.0" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="120.0">
+            <children>
+                
+                <!-- Barra de búsqueda y filtros -->
+                <HBox layoutX="30.0" layoutY="30.0" spacing="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+                    <children>
+                        <TextField prefHeight="40.0" prefWidth="300.0" promptText="Buscar por matrícula o nombre..." style="-fx-font-size: 14px; -fx-background-radius: 20; -fx-border-color: #BDBDBD; -fx-border-radius: 20; -fx-prompt-text-fill: #757575;">
+                            <padding>
+                                <Insets left="15.0" />
+                            </padding>
+                        </TextField>
+                        <ComboBox prefHeight="40.0" prefWidth="150.0" promptText="Filtrar por carrera" style="-fx-font-size: 14px; -fx-background-radius: 20; -fx-border-color: #BDBDBD; -fx-border-radius: 20;" />
+                        <ComboBox prefHeight="40.0" prefWidth="120.0" promptText="Generación" style="-fx-font-size: 14px; -fx-background-radius: 20; -fx-border-color: #BDBDBD; -fx-border-radius: 20;" />
+                        <Button prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #009688; -fx-background-radius: 20;" text="🔍" textFill="white">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+
+                <!-- Tabla de datos -->
+                <TableView layoutX="30.0" layoutY="90.0" prefHeight="400.0" prefWidth="960.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="90.0">
+                    <columns>
+                        <TableColumn prefWidth="120.0" text="Matrícula" />
+                        <TableColumn prefWidth="248.0" text="Nombre Completo" />
+                        <TableColumn prefWidth="142.0" text="Carrera" />
+                        <TableColumn prefWidth="91.0" text="Generación" />
+                        <TableColumn prefWidth="128.0" text="Grupo" />
+                        <TableColumn prefWidth="230.0" text="Correo Electrónico" />
+                    </columns>
+                    <placeholder>
+                        <Label text="No hay datos de alumnos registrados" />
+                    </placeholder>
+                </TableView>
+
+                <!-- Panel de botones de acción -->
+                <HBox alignment="CENTER" layoutX="30.0" layoutY="510.0" spacing="20.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                    <children>
+                        <Button prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #2196F3; -fx-background-radius: 22;" text="Editar Alumno" textFill="white">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #F44336; -fx-background-radius: 22;" text="Eliminar Alumno" textFill="white">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #FF9800; -fx-background-radius: 22;" text="Exportar Datos" textFill="white">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

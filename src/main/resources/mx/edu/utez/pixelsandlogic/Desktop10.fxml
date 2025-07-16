@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.pixelsandlogic.Main">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #1E2468;">
+         <children>
+            <Label text="    Nombre del usuario-Editar perfil" textFill="#fffbfb">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <VBox layoutX="94.0" layoutY="147.0" prefHeight="91.0" prefWidth="180.0" spacing="25.0">
+         <children>
+            <TextField promptText="Correo Electrónico" style="-fx-border-color: #000000; -fx-border-radius: 5;" />
+            <TextField promptText="Nombre Completo" style="-fx-border-color: #000000; -fx-border-radius: 5;" />
+         </children>
+      </VBox>
+      <VBox layoutX="326.0" layoutY="147.0" prefHeight="91.0" prefWidth="180.0" spacing="25.0">
+         <children>
+            <TextField promptText="División Academica" style="-fx-border-color: #000000; -fx-border-radius: 5;" />
+            <TextField promptText="Contraseña" style="-fx-border-color: #000000; -fx-border-radius: 5;" />
+         </children>
+      </VBox>
+      <Label layoutX="91.0" layoutY="244.0" text=" Estado académico:" />
+      <Label layoutX="91.0" layoutY="273.0" text=" Activo:" />
+      <Circle fill="#2d8f42" layoutX="147.0" layoutY="282.0" radius="5.0" stroke="#2d8f42" strokeType="INSIDE" />
+      <Button layoutX="268.0" layoutY="330.0" mnemonicParsing="false" style="-fx-border-color: #000000; -fx-background-color: #029373; -fx-border-radius: 5;" text="Guardar" textFill="#fcfcfc">
+         <font>
+            <Font name="Inter Regular" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

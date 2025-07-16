@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="500" prefWidth="900" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+   
+       <!-- Panel lateral izquierdo -->
+       <VBox alignment="TOP_CENTER" prefWidth="60" style="-fx-background-color: #555555;">
+           <padding>
+               <Insets top="5.0" />
+           </padding>
+      <children>
+              <!-- Debes establecer la imagen para este ImageView en tu código de controlador Java. -->
+              <ImageView fx:id="userIcon" fitHeight="40" fitWidth="40">
+               <image>
+                  <Image url="@assets/Incono.png" />
+               </image>
+            </ImageView>
+      </children>
+       </VBox>
+   
+       <VBox HBox.hgrow="ALWAYS">
+      <children>
+              <!-- Encabezado superior -->
+              <Pane prefHeight="50" style="-fx-background-color: #1A1A65;">
+                 <children>
+                     <Label layoutX="20" layoutY="15" style="-fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold;" text="Extravío de contraseña docentes" />
+                 </children>
+              </Pane>
+      
+              <!-- Contenido central -->
+              <VBox alignment="TOP_LEFT" spacing="20">
+                  <padding>
+                      <Insets bottom="20" left="20" right="20" top="20" />
+                  </padding>
+         <children>
+         
+                     <!-- Campo de búsqueda -->
+                     <HBox alignment="CENTER_LEFT" spacing="10">
+            <children>
+                            <ImageView fx:id="searchIcon" fitHeight="20" fitWidth="20" />
+                            <TextField fx:id="searchField" prefWidth="300" promptText="Buscar Docente" style="-fx-border-color: #00A99D; -fx-border-width: 2px;" />
+            </children>
+                     </HBox>
+         
+                     <!-- Tabla de docentes -->
+                     <TableView fx:id="docentesTable" prefHeight="350" prefWidth="800">
+                         <columns>
+                             <TableColumn fx:id="nombreCol" prefWidth="200" text="Nombre" />
+                             <TableColumn fx:id="correoCol" prefWidth="250" text="Correo" />
+                             <TableColumn fx:id="restablecerCol" prefWidth="200" text="Restablecer contraseña" />
+                             <TableColumn fx:id="provisionalCol" prefWidth="150" text="Contraseña provisional" />
+                         </columns>
+                     </TableView>
+         </children>
+              </VBox>
+      </children>
+       </VBox>
+   </children>
+
+</HBox>

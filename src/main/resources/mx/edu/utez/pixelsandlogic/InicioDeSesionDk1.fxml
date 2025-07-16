@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.pixelsandlogic.InicioDeSesionDk1">
+  <children>
+    <VBox alignment="CENTER" maxWidth="450" spacing="15.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10;">
+      <children>
+        <ImageView fitHeight="177.0" fitWidth="452.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@assets/logoUtez.png" />
+          </image>
+        </ImageView>
+        <Label style="-fx-font-size: 16px;" text="Ingresa tu usuario" />
+        <TextField fx:id="email" maxWidth="350" promptText="Email" />
+        <PasswordField fx:id="password" maxWidth="350" promptText="Contraseña" />
+        <Hyperlink fx:id="forgotPasswordLink" text="¿Olvidaste tu contraseña?" />
+        <Button fx:id="onLoginButtonClicked" maxWidth="250" onAction="#Botton" style="-fx-background-color: #23245C; -fx-text-fill: white; -fx-font-size: 16px;" text="Iniciar sesión" />
+        <VBox alignment="CENTER">
+          <children>
+            <Hyperlink fx:id="registerLink" text="Registrate" />
+          </children>
+        </VBox>
+      </children>
+      <padding>
+        <Insets bottom="40" left="40" right="40" top="40" />
+      </padding>
+    </VBox>
+  </children>
+</StackPane>

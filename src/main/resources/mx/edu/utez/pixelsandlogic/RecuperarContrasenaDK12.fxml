@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane style="-fx-background-color: #ECEFF1;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.pixelsandlogic.Main">
+<StackPane style="-fx-background-color: #ECEFF1;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.pixelsandlogic.RecuperarContrasenaDK12">
 
     <VBox alignment="TOP_CENTER" prefWidth="600" spacing="0" style="-fx-padding: 0;">
 

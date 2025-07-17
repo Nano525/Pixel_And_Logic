@@ -1,5 +1,6 @@
 package mx.edu.utez.pixelsandlogic;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -63,4 +64,19 @@ public class InicioDeSesionDk1 {
         }
     }
 
+    //Tiene errores
+     public void abrirOlvidasteContraseña (ActionEvent event){
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader (Main.class.getResource("RecuperarContrasenaDk12.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage newStage = new Stage();
+            newStage.setTitle("Desktop 12");
+            newStage.setScene(scene);
+            newStage.setMaximized(true);
+            newStage.showAndWait();
+
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+     }
 }

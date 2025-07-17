@@ -17,7 +17,7 @@
         <Label style="-fx-font-size: 16px;" text="Ingresa tu usuario" />
         <TextField fx:id="email" maxWidth="350" promptText="Email" />
         <PasswordField fx:id="password" maxWidth="350" promptText="Contraseña" />
-        <Hyperlink fx:id="forgotPasswordLink" text="¿Olvidaste tu contraseña?" />
+        <Hyperlink fx:id="forgotPasswordLink" onAction="#abrirOlvidasteContraseña" text="¿Olvidaste tu contraseña?" />
         <Button fx:id="onLoginButtonClicked" maxWidth="250" onAction="#Botton" style="-fx-background-color: #23245C; -fx-text-fill: white; -fx-font-size: 16px;" text="Iniciar sesión" />
         <VBox alignment="CENTER">
           <children>
